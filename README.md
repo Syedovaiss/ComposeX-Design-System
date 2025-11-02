@@ -26,6 +26,8 @@ ComposeX Design System is a modular, scalable solution for building consistent u
 
 ## Installation
 
+### Using as a Module (Local Development)
+
 Add the module to your project's `build.gradle.kts`:
 
 ```kotlin
@@ -34,11 +36,25 @@ dependencies {
 }
 ```
 
-Or if using as a library:
+### Using as a Library (JitPack)
+
+1. Add JitPack to your `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+2. Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.ovais.composex:composex-core:1.0.0")
+    implementation("com.github.Syedovaiss:ComposeX-Design-System:v1.0.0")
 }
 ```
 
