@@ -704,7 +704,9 @@ Components use a three-layer styling system:
 
 ## License
 
-[Your License Here]
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Syed Ovais Akhtar
 
 ## Contributing
 
